@@ -1,0 +1,11 @@
+name: Deploy to test
+on:
+  issues:
+    types: [opened]
+jobs:
+  Output_Issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output issue title and body
+        run: |
+          echo "Issue Title: ${{ github.event.issue}}"
