@@ -6,6 +6,6 @@ jobs:
   Output_Issue:
     runs-on: ubuntu-latest
     steps:
-      - name: Output issue title and body
+      - name: Output issue body
         run: |
-          echo "Issue Title: ${{ github.event.issue}}"
+          echo "Issue Title: ${{ toJson(github.event.issue) }}"
