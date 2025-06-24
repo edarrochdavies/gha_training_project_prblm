@@ -1,6 +1,5 @@
 name: Deploy to test
 on: [push, workflow_dispatch]
-runs-on: ubuntu-latest
 jobs:
   lint:
     runs-on: ubuntu-latest
